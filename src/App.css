@@ -7,8 +7,9 @@
   justify-content: center;
   flex-direction: column;
   align-items: center;
-  background-color: #7f2a2a;
-  height: 270px;
+  background-image: url('https://us.123rf.com/450wm/somegirl/somegirl1905/somegirl190500136/124101218-traditional-esstern-rice-dish-pilaf.jpg?ver=6');
+  opacity: 1 ;
+  height: 367px;
   width: 100%;
   border-radius: 20px;
 }
@@ -63,7 +64,10 @@ p{
   width:250px
 }
 #login-btn{
-  width:100%
+  width:100%;
+  background-color: green;
+  border-radius: 10px;
+  border:none
 }
 .userName{
   margin-top:20px
@@ -74,6 +78,8 @@ p{
   margin-top: 170px;
   flex-direction: column;
   align-items: center;
+  z-index: 99;
+  width:100%
 }
 .chef-image{
   width: 75px;
@@ -86,7 +92,7 @@ p{
   position: absolute;
   margin-top: -140px;
   font-size: 30px;
-  color: darkred;
+  color: navajowhite;;
   text-align: center;
 }
 @media (min-width: 767px) {
@@ -100,4 +106,55 @@ p{
   margin-top:15px;
   display:none;
   text-align: center;
+}
+.home-form{
+	align-items: center;
+    display: flex;
+    justify-content: center;
+}
+.home-form{
+	align-items: center;
+    display: flex;
+    justify-content: center;
+}
+.home-form input{
+  border-radius: 10px !important;
+}
+.continueBtn{
+  display: flex;
+  justify-content: center;
+  margin-bottom: -15px;
+  align-items: flex-end;
+  padding-left: 18px;
+}
+.home-form a{
+  border-radius: 10px;
+  height: 50px;
+  text-align: center;
+  margin-right: 30px;
+}
+body{
+  background-color: #1c1a1a !important;
+}
+.home-form input{
+  border:2px solid green;
+}
+.googleLoginBtn{
+  margin-top: 20px;
+  border-radius: 50px !important;
+  padding:1px 6px !important;
+  color:black !important;
+  transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+  font-family: inherit !important;
+  text-align: center;
+  margin-right: 30px;
+  width:115px;
+}
+.googleLoginBtn div{
+  border-radius: 30px !important;
+  margin-left: 19px !important;
+}
+.continue-text{
+  margin-top: -6px;
+  display: block;
 }
