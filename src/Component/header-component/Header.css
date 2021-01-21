@@ -1,0 +1,39 @@
+.homepageheader{
+    background-color: #2d512a;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+}
+.homepageheader p{
+    color:white;
+}
+
+.logoutbtn{
+    margin-right:40px
+}
+.homepageheader button{
+    height:40px;
+    margin-top:8px
+}
+.headername p{
+    font-size:25px;
+    margin-left:30px;
+    color:white;
+    margin-top:8px
+}
+@media (max-width: 768px) {
+    .headername p{ 
+        font-size: 18px;
+        margin-left: 18px;
+        margin-top: 14px !important;
+    }
+}
+
+
+.profile-logo{
+    height:30px;
+    width:30px
+}
+.profile-details{
+    display: flex
+}

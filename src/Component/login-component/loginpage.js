@@ -3,7 +3,7 @@ import { Component } from 'react';
 import { Link } from 'react-router-dom';
 import GoogleLogin from 'react-google-login';
 
-class Home extends Component {
+class LoginPage extends Component {
 
   constructor(props) {
     super(props);
@@ -33,7 +33,7 @@ class Home extends Component {
 
   submitLogin(event) {
     if (this.state.userName === "Bhanu" && this.state.password === "9100623783") {
-      this.props.history.push("/viewusers");
+      this.props.history.push("/homepage");
     } else {
       document.querySelector('.not-owner').style.display = "block";
       event.preventDefault();
@@ -42,7 +42,7 @@ class Home extends Component {
 
   responseGoogleOnSuccess = (response) => {
     console.log(response.profileObj.name);
-    this.props.history.push("/viewusers");
+    this.props.history.push("/homepage");
   }
 
   responseGoogleOnFailure = (response) => {
@@ -66,7 +66,7 @@ class Home extends Component {
               <button id="login-btn" className="btn btn-primary" type="submit">Login</button>
             </div>
             <div className="continueBtn login-field">
-              <Link to="./viewusers" className="btn btn-primary"><span className="continue-text">Guest Login</span></Link>
+              <Link to="./homepage" className="btn btn-primary"><span className="continue-text">Guest Login</span></Link>
               <GoogleLogin
                 className="googleLoginBtn"
                 clientId="1077394997428-4gpt4htaqakich7dul7jfitkk70i0rug.apps.googleusercontent.com"
@@ -84,4 +84,4 @@ class Home extends Component {
   }
 }
 
-export default Home;
+export default LoginPage;

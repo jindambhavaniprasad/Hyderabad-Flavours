@@ -92,7 +92,7 @@ p{
   position: absolute;
   margin-top: -140px;
   font-size: 30px;
-  color: navajowhite;;
+  color: #560505;;
   text-align: center;
 }
 @media (min-width: 767px) {
@@ -134,7 +134,7 @@ p{
   margin-right: 30px;
 }
 body{
-  background-color: #1c1a1a !important;
+  background-color: #fafafa !important;
 }
 .home-form input{
   border:2px solid green;
