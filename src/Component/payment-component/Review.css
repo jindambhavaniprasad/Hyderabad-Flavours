@@ -1,0 +1,51 @@
+.payment-form{
+    display:flex;
+    flex-direction: column;
+    padding:10px 5px 10px 5px
+}
+.payment{
+    display: flex;
+    justify-content: center;
+}
+.itemtotal{
+    margin:0;
+    text-align: center;
+    color:brown
+}
+.itemprice{
+    margin-bottom: 10px;
+}
+.review-items{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.grandtotal-div{
+    display:flex;
+    background-color: #ffb100;
+    width: 200px;
+    border-radius: 10px;
+    padding:6px;
+    margin: 35px;
+}
+.grandtotal{
+    color:red;
+    margin:0;
+    font-family: cursive;
+    font-weight: 700;
+    margin-left: 15px;
+}
+.payment-form input{
+    margin:10px 0 10px 0
+}
+.pay-button{
+    margin-top:10px
+}
+.thankyou{
+    display: flex;
+    align-items: center;
+    margin: 100px;
+}
+.thankyou p{
+    font-size:30px
+}

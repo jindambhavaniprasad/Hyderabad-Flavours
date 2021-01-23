@@ -3,51 +3,17 @@ import { Component } from 'react';
 
 class MenuItem extends Component {
 
-    constructor(props){
-        super(props);
-        this.state = {
-            menu: this.props.items,
-            totalPrice: this.props.totalPrice
-        }
-    }
-
-    increment(event) {
-        event.persist();
-        let itemPrice = Number(event.target.parentElement.parentElement.parentElement.parentElement.querySelector('.itemprice p').innerHTML);
-        let totalBasePrice = Number(this.state.totalPrice)
-        this.setState({
-            totalPrice: itemPrice + totalBasePrice
-        }, () => {
-            let itemQuantity = Number(event.target.parentElement.parentElement.querySelector('.countervalue').innerHTML);
-            let itemQuantituUpdated = itemQuantity + 1;
-            event.target.parentElement.parentElement.querySelector('.countervalue').innerHTML = itemQuantituUpdated;
-        }
-        )
-    }
-
-    decrement(event) {
-        event.persist();
-        let itemPrice = Number(event.target.parentElement.parentElement.parentElement.parentElement.querySelector('.itemprice p').innerHTML);
-        let totalBasePrice = Number(this.state.totalPrice)
-        this.setState({
-            totalPrice: totalBasePrice > 0 ? totalBasePrice - itemPrice : 0
-        }, () => {
-            let itemQuantity = Number(event.target.parentElement.parentElement.querySelector('.countervalue').innerHTML);
-            let itemQuantituUpdated = itemQuantity > 0 ? itemQuantity - 1 : 0;
-            event.target.parentElement.parentElement.querySelector('.countervalue').innerHTML = itemQuantituUpdated;
-        }
-        )
-    }
-
     render() {
         const {
-            items
+            items,
+            onIncrement,
+            onDecrement,
         } = this.props;
 
         return (
-            items != null && items.map(item => {
+            (items != null && items !== "") && items.map((item, index) => {
                 return (
-                    <div key={item.name} className={item.type.split(" ").join("")}>
+                    <div key={item.name} id={index} className={item.type.split(" ").join("")}>
                         <div className="itemcard">
                             <div className="itemimage">
                                 <img src={item.image} className="itemImage" alt="" />
@@ -57,18 +23,19 @@ class MenuItem extends Component {
                                     <div className="itemname">
                                         <p>{item.name}</p>
                                     </div>
-                                    <div className="itemtype">
-                                        <p>{item.type}</p>
-                                    </div>
                                     <div className="itemprice">
-                                        <p>{item.price}</p>
-                                    </div>
+                                        <p>Price:- {item.price}</p>
+                                    </div>                                    
                                 </div>
                                 <div className="itemcounter">
+                                    <div className="itemtype">
+                                        <div className="typelabel"></div>
+                                        <p>{item.type}</p>
+                                    </div>
                                     <div className="itemcounterinner">
-                                        <button className="btn" onClick={this.decrement.bind(this)}><i className="fa fa-minus"></i></button>
-                                        <span className="countervalue">0</span>
-                                        <button className="btn" onClick={this.increment.bind(this)}><i className="fa fa-plus"></i></button>
+                                        <button className="btn decrementBtn" onClick={onDecrement} disabled={item.quantity === 0} id={index}><i className="fa fa-minus" id={index}></i></button>
+                                        <span className="countervalue">{item.quantity}</span>
+                                        <button className="btn incrementBtn" onClick={onIncrement} id={index}><i className="fa fa-plus" id={index}></i></button>
                                     </div>
                                 </div>
                             </div>

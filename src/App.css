@@ -158,3 +158,9 @@ body{
   margin-top: -6px;
   display: block;
 }
+.welcome-text-home{
+    text-align: center;
+    font-size: 20px;
+    font-family: monospace;
+    font-weight: bolder;
+}

@@ -1,22 +1,15 @@
 import React from 'react';
-import { Component } from 'react';
 
-class ContinueButton extends Component {
+const ContinueButton = (props) => {
 
-    constructor(props){
-        super(props);
-        this.state = {
-            totalPrice: this.props.totalPrice
-        }
-    }
-    render() {
         return(
-            <div className="continuebuttonDiv">
-                <button className="btn btn-primary">
-                    Continue to Pay {this.state.totalPrice}
+            props.selectedItemsLength > 0 ?
+            (<div className="continuebuttonDiv">
+                <button className="btn btn-success" onClick={props.onContinue}>
+                    Continue
                 </button>
-            </div>
-        );
-    }
+            </div>)
+            : ""
+        )
 }
 export default ContinueButton;

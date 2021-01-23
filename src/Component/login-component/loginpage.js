@@ -42,6 +42,8 @@ class LoginPage extends Component {
 
   responseGoogleOnSuccess = (response) => {
     console.log(response.profileObj.name);
+    localStorage.setItem("username",response.profileObj.name);
+    localStorage.setItem("userimage",response.profileObj.imageUrl);
     this.props.history.push("/homepage");
   }
 
