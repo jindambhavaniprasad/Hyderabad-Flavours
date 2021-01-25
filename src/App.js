@@ -13,6 +13,8 @@ import './Component/header-component/Header.css'
 import Review from './Component/payment-component/Review'
 import './Component/payment-component/Review.css'
 import ThankYou from './Component/payment-component/ThankYou';
+import LoginWithOTP from './Component/login-component/loginwithotp';
+import './Component/login-component/login.css'
 
 class App extends Component{
 
@@ -26,6 +28,7 @@ class App extends Component{
         <Route path = "/homepage" component = {HomePage}></Route>
         <Route path = "/payment" component = {Review}></Route>
         <Route path = "/thankyou" component = {ThankYou}></Route>
+        <Route path = "/loginwithotp" component = {LoginWithOTP}></Route>
       </BrowserRouter>
     )
   }

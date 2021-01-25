@@ -68,7 +68,7 @@ class LoginPage extends Component {
               <button id="login-btn" className="btn btn-primary" type="submit">Login</button>
             </div>
             <div className="continueBtn login-field">
-              <Link to="./homepage" className="btn btn-primary"><span className="continue-text">Guest Login</span></Link>
+              <Link to="./loginwithotp" className="btn btn-primary"><span className="continue-text">OTP Login</span></Link>
               <GoogleLogin
                 className="googleLoginBtn"
                 clientId="1077394997428-4gpt4htaqakich7dul7jfitkk70i0rug.apps.googleusercontent.com"
