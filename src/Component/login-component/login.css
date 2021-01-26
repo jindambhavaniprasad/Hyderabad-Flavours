@@ -170,7 +170,7 @@
     flex-direction: column;
     align-items: center;
     border-radius:10px;
-    padding: 30px;
+    padding: 30px 0;
   }
   .signupbtn{
     margin-top:10px !important
@@ -206,4 +206,10 @@
   }
   .signupsuccess p{
     text-align: center;
+  }
+  .signuppage-welcome-text span{
+    text-align: center;
+  }
+  .signupform .MuiFormControl-root{
+    width:240px
   }
