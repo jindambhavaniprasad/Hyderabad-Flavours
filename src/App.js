@@ -15,6 +15,8 @@ import './Component/payment-component/Review.css'
 import ThankYou from './Component/payment-component/ThankYou';
 import LoginWithOTP from './Component/login-component/loginwithotp';
 import './Component/login-component/login.css'
+import SignUp from './Component/login-component/signup';
+import SignUpSuccess from './Component/login-component/signupsuccess';
 
 class App extends Component{
 
@@ -29,6 +31,8 @@ class App extends Component{
         <Route path = "/payment" component = {Review}></Route>
         <Route path = "/thankyou" component = {ThankYou}></Route>
         <Route path = "/loginwithotp" component = {LoginWithOTP}></Route>
+        <Route path = "/signup" component = {SignUp}></Route>
+        <Route path = "/signupsuccess" component = {SignUpSuccess}></Route>
       </BrowserRouter>
     )
   }

@@ -10,7 +10,7 @@
   background-image: url('https://us.123rf.com/450wm/somegirl/somegirl1905/somegirl190500136/124101218-traditional-esstern-rice-dish-pilaf.jpg?ver=6');
   opacity: 1 ;
   height: 367px;
-  width: 100%;
+  width: 364px;
   border-radius: 20px;
 }
 @media (min-width: 767px) {
@@ -81,24 +81,12 @@ p{
   z-index: 99;
   width:100%
 }
-.chef-image{
-  width: 75px;
-  height: 75px;
-  margin-top: -40px;
-  position: absolute;
-}
+
 .welcome-text{
   font-family: Arial, Helvetica, sans-serif;
-  position: absolute;
-  margin-top: -140px;
   font-size: 30px;
-  color: #560505;;
-  text-align: center;
-}
-@media (min-width: 767px) {
-  .welcome-text{ 
-    margin-top: -90px;
-  }
+  color: #560505;
+  display: flex;
 }
 .not-owner{
   color: #db0000;
@@ -106,6 +94,8 @@ p{
   margin-top:15px;
   display:none;
   text-align: center;
+  font-family: fantasy;
+  font-weight: bolder;
 }
 .home-form{
 	align-items: center;
@@ -116,9 +106,6 @@ p{
 	align-items: center;
     display: flex;
     justify-content: center;
-}
-.home-form input{
-  border-radius: 10px !important;
 }
 .continueBtn{
   display: flex;
@@ -126,6 +113,7 @@ p{
   margin-bottom: -15px;
   align-items: flex-end;
   padding-left: 18px;
+  margin-bottom:10px
 }
 .home-form a{
   border-radius: 10px;
@@ -135,9 +123,6 @@ p{
 }
 body{
   background-color: #fafafa !important;
-}
-.home-form input{
-  border:2px solid green;
 }
 .googleLoginBtn{
   margin-top: 20px;

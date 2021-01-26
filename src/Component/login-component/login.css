@@ -93,8 +93,117 @@
       transform: scale(1.0); 
     } 
   }
+  .signuppage .animation{
+    position: absolute;
+    z-index:999
+  }
   .animation{
     margin-top: 65px;
     margin-bottom: -55px;
     display: none;
+  }
+  .signup-link{
+    color: #ffeb00;
+    height: 10px !important;
+    font-family: inherit;
+    font-weight: 700;
+  }
+  .home-form .MuiFormControl-root{
+    width: 100%;
+    background-color: #ffffffe0;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+  } 
+  .incorrectdetails{
+    color: red;
+    font-size: 20px;
+    justify-content: center;
+    display:none
+  }
+  .homepage-textarea{
+    display: flex;
+    flex-direction: column;
+    margin-top: -115px;
+    height: 120px;
+    justify-content: space-between;
+    margin-bottom:40px
+  }
+  @media (min-width: 767px) {
+    .homepage-textarea{ 
+      margin-top: -70px;
+      margin-bottom: 55px;
+      height:75px;
+    }
+  }
+  .homepage-textarea span{
+    text-align: center;
+  }
+  .chef-image{
+    width: 75px;
+    height: 75px;
+    margin-top: -45px;
+    margin-left: 180px;
+    position: absolute;
+  }
+  .home-form .animation{
+    position: absolute;
+    z-index:999
+  }
+  @media (max-width: 768px) {
+    .chef-image{ 
+      margin-left: 140px;
+    }
+  }
+  .signuppage{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 100px 0px;
+  }
+  .signup-input-field{
+    margin-bottom:20px
+  }
+  .signupform{
+    background-color: #8080806e;
+    width: 320px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius:10px;
+    padding: 30px;
+  }
+  .signupbtn{
+    margin-top:10px !important
+  }
+  .signupsuccess{
+    margin:100px 10px;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .useralreadyexists{
+    display: none;
+    color:red;
+    font-size:20px
+  }
+  .signuppage-welcome-text{
+    margin-bottom:20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    color: #560505;
+    display: flex;
+  }
+  .passwordsnotmatch{
+    display: none;
+    color:red;
+    font-size:20px
+  }
+  .signupsuccess img{
+    height:80px;
+    width:80px;
+    margin-bottom:10px
+  }
+  .signupsuccess p{
+    text-align: center;
   }

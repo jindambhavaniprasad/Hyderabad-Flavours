@@ -1,11 +1,17 @@
 .payment-form{
     display:flex;
     flex-direction: column;
-    padding:10px 5px 10px 5px
+    padding:10px 5px 10px 5px;
+    margin: 0px 25px;
 }
 .payment{
     display: flex;
     justify-content: center;
+    border: 2px solid #ad5656;
+    margin-bottom: 100px;
+    background-color: antiquewhite;
+    border-radius: 20px;
+    padding: 20px;
 }
 .itemtotal{
     margin:0;
@@ -35,11 +41,14 @@
     font-weight: 700;
     margin-left: 15px;
 }
-.payment-form input{
-    margin:10px 0 10px 0
+.payment-form div{
+    margin-bottom:10px !important;
+    color:black !important;
+    width: 250px;
 }
 .pay-button{
-    margin-top:10px
+    margin-top:10px;
+    height: 45px
 }
 .thankyou{
     display: flex;
@@ -48,4 +57,10 @@
 }
 .thankyou p{
     font-size:30px
+}
+.payment-details{
+    color:#ad5656;
+    font-size:20px;
+    text-align:center;
+    margin-bottom:25px
 }
