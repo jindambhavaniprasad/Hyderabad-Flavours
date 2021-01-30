@@ -14,7 +14,8 @@ class Review extends Component{
     componentDidMount(){
         let grandTotal = 0;
         let selectedItems = [];
-        JSON.parse(localStorage.getItem("selecteditems")).forEach(item => {
+        const items = JSON.parse(localStorage.getItem("selecteditems"));
+        items && items.forEach(item => {
             item.itemTotal = Number(item.quantity) * Number(item.price)
             grandTotal = grandTotal + item.itemTotal;
             selectedItems.push(item);

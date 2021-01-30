@@ -14,7 +14,8 @@ class HomePage extends Component {
             sortValue: "",
             filterValue: "",
             menutoDisplay: [],
-            selectedItems: []
+            selectedItems: [],
+            user: JSON.parse(localStorage.getItem("user"))
         };
 
     componentDidMount() {
@@ -23,12 +24,17 @@ class HomePage extends Component {
             const itemsArray = [];
             const menutoDisp = [];
             const menuItems = dataSnap.val();
-            menuItems.forEach( e => {
-                itemsQuantityArray.push(0);
-                e.quantity = 0;
-                itemsArray.push(e);
-                menutoDisp.push(e);
-            });
+            for (var key in menuItems) {
+                if (menuItems.hasOwnProperty(key)) {
+                  let itemgroup = menuItems[key];
+                  itemgroup.forEach(item => {
+                    itemsQuantityArray.push(0);
+                    item.quantity = 0;
+                    itemsArray.push(item);
+                    menutoDisp.push(item);
+                  })
+                }
+            }
             this.setState({
                 menu: itemsArray,
                 itemsQuantity: itemsQuantityArray,
@@ -125,8 +131,8 @@ class HomePage extends Component {
                 <Header 
                 props = {this.props}
                 />
-                <div>
-                    <p className="welcome-text-home">Hi, {localStorage.getItem("username")}</p>
+                <div className="info-div">
+                    <p className="welcome-text-home">Hi, {this.state.user.name != null ? this.state.user.name : this.state.user.Name}</p>
                     <Filter
                     sortValue={this.state.sortValue}
                     filterValue={this.state.filterValue}

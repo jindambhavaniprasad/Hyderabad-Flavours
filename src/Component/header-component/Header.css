@@ -1,8 +1,11 @@
 .homepageheader{
-    background-color: #2d512a;
     height: 60px;
     display: flex;
     justify-content: space-between;
+    position: sticky;
+    top: 0;
+    background: linear-gradient(to right, #434343, #000000);
+    z-index: 9999;
 }
 .homepageheader p{
     color:white;
@@ -16,10 +19,12 @@
     margin-top:8px
 }
 .headername p{
-    font-size:25px;
-    margin-left:30px;
-    color:white;
-    margin-top:8px
+    font-size: 27px;
+    margin-left: 30px;
+    color: #ffc800;
+    margin-top: 8px;
+    font-family: monospace;
+    font-weight: bolder;
 }
 @media (max-width: 768px) {
     .headername p{ 
@@ -37,4 +42,31 @@
 }
 .profile-details{
     display: flex
+}
+
+li{
+    list-style: none;
+    border-bottom:1px solid black;
+    width:100px
+}
+.profile-menu{
+    background-color: rgb(31, 109, 24);
+    border-radius:10px;
+    display:none;
+    margin-left: -50px;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+    z-index: 999;
+}
+.profilelogo{
+    width:100px
+}
+.profile-menu-btn{
+    padding: 0;
+    text-align: center;
+    color:white
+}
+.profile-btn{
+    background-color: darkslategray;
 }

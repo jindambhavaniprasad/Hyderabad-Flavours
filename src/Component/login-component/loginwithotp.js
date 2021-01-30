@@ -67,6 +67,7 @@ class LoginWithOTP extends Component{
         document.querySelector('.animation').style.display="block";
         this.state.confirmationResult.confirm(this.state.otp).then((e)=>{
             console.log(e.user);
+            localStorage.setItem("otpuser",JSON.stringify(e.user));
             document.querySelector('.animation').style.display="none";
             this.props.history.push('/homepage');
         }).catch((error) => {

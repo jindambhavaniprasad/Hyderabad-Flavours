@@ -7,16 +7,17 @@
 .payment{
     display: flex;
     justify-content: center;
-    border: 2px solid #ad5656;
+    border: 2px solid #000000;
     margin-bottom: 100px;
-    background-color: antiquewhite;
+    background-color: #b3b3b3;
     border-radius: 20px;
     padding: 20px;
+    box-shadow: -8px 11px 20px #000;
 }
 .itemtotal{
     margin:0;
     text-align: center;
-    color:brown
+    color:white
 }
 .itemprice{
     margin-bottom: 10px;
@@ -59,8 +60,10 @@
     font-size:30px
 }
 .payment-details{
-    color:#ad5656;
+    color:rgb(0, 0, 0);
     font-size:20px;
     text-align:center;
-    margin-bottom:25px
+    margin-bottom:25px;
+    font-family: revert;
+    font-weight: bolder;
 }
