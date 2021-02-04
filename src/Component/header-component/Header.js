@@ -13,16 +13,6 @@ const Header = (props) => {
         localStorage.clear();
     }
 
-    const showorHideProfileMenu = (event) => {
-        const isDisplayed = document.querySelector('.profile-menu').style.display === "flex";
-        if (isDisplayed) {
-            document.querySelector('.profile-menu').style.display = "none";
-        } else {
-            document.querySelector('.profile-menu').style.display = "flex";
-            document.body.setAttribute('overflow', 'hidden');
-        }
-    }
-
     const handleOpen = () => {
         open === false ? setOpen(true) : setOpen(false);
     }
