@@ -19,7 +19,6 @@ class LoginWithOTP extends Component{
         event.preventDefault();
         let number = "+91"+this.state.phoneNumber;
         document.getElementById('recaptcha-container').innerHTML="";
-        //let recaptcha = new firebase.auth.RecaptchaVerifier('recaptcha-container');
         let recaptcha = new firebase.auth.RecaptchaVerifier('recaptcha-container', {
             'size': 'invisible',
             'callback': (response) => {
@@ -113,7 +112,7 @@ class LoginWithOTP extends Component{
                 <button className="btn btn-link otpsendbtn" type="submit" disabled={false}>Send OTP</button>
                 </form>
                 <div id="recaptcha-container"></div>
-                <div className="otpsend-msg" style={this.state.displaymsg}><p>An OTP has been sent to your mobile. Please enter below</p></div>
+                <div className="otpsend-msg"><p>An OTP has been sent to your mobile. Please enter below</p></div>
                 <form onSubmit={this.redirectToLogin.bind(this)} className="otpform">
                     <FormControl>
                         <InputLabel htmlFor="my-input">OTP</InputLabel>

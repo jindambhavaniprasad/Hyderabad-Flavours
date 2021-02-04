@@ -169,6 +169,7 @@
     align-items: center;
     border-radius:10px;
     padding: 30px 0;
+    background-color: #979797;
   }
   .signupbtn{
     margin-top:10px !important
@@ -189,7 +190,7 @@
     margin-bottom:20px;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 30px;
-    color: #560505;
+    color: #ffb100;
     display: flex;
   }
   .passwordsnotmatch{
@@ -361,4 +362,37 @@
       font-weight: bolder;
       color: white;
   }
-  
+  .signup-otp{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+  }
+  .signup-phonenumber{
+    display:flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+  .phonenumber-field{
+    width:133px !important
+  }
+  .signup-sendotpbtn{
+    width:80px;
+    background-color: darkslategray !important;
+  }
+  .incorrectOTP p{
+    color:red !important;
+  }
+  .incorrectOTP{
+    display:none
+  }
+  .signup-otpsend-msg p{
+    color:black;
+    text-align:center;
+    margin:10px;
+  }
+  .signup-otpsend-msg {
+    display: none;
+  }
+  .loginwithotpform label{
+    color:white !important;
+  }

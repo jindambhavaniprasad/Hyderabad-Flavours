@@ -57,7 +57,7 @@
     margin: 100px;
 }
 .thankyou p{
-    font-size:30px
+    font-size:20px
 }
 .payment-details{
     color:rgb(0, 0, 0);
@@ -66,4 +66,29 @@
     margin-bottom:25px;
     font-family: revert;
     font-weight: bolder;
+}
+.thankyou-for-ordering{
+    display:block;
+    color:white;
+    font-size:20px
+}
+.thankyou-for-ordering span{
+    text-align: center;
+}
+.thankyou-otpsent-msg{
+    color:white;
+    text-align: center;
+}
+.paymentconfirm-form{
+    display:flex;
+    flex-direction: column;
+    background-color: blanchedalmond;
+    padding:50px;
+    border-radius:10px
+}
+.ty-submit-button{
+    margin-top:15px !important
+}
+.payment-animation{
+    position:absolute;
 }

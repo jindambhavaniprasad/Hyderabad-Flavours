@@ -1,6 +1,6 @@
 import React from 'react';
 
-const ItemsSelected = (props) => {
+const OrderItems = (props) => {
 
     return (
         props.items && props.items.map(item => {
@@ -15,17 +15,11 @@ const ItemsSelected = (props) => {
                         <div className="itemname">
                             <p>{item.name}</p>
                         </div>
-                        <div className="itemprice">
-                            <p>Price:- {item.price}</p>
-                        </div>
                     </div>
-                    <div className="itemcounter">
+                    <div className="itemcounter order-itemtype">
                         <div className="itemtype">
                             <div className="typelabel"></div>
                             <p>{item.type}</p>
-                        </div>
-                        <div className="itemprice">
-                            <div><p className="itemtotal">ItemTotal: Rs. {item.itemTotal}</p></div>
                         </div>
                     </div>
                 </div>
@@ -35,4 +29,4 @@ const ItemsSelected = (props) => {
         })  
     )
 }
-export default ItemsSelected;
+export default OrderItems;
