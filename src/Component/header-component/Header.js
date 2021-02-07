@@ -27,7 +27,7 @@ const Header = (props) => {
     return (
         <div className="homepageheader">
             <div className="headername">
-                <p>Sri Hyderabad Flavours</p>
+                <Link to="./homepage"><p>Sri Hyderabad Flavours</p></Link>
             </div>
             <div className="profile-details">
                 <div className="profilelogo">
@@ -40,7 +40,7 @@ const Header = (props) => {
                             <div className="profile-menu-li">
                                 <li>
                                     <div>
-                                        <button className="btn profile-menu-btn">Profile</button>
+                                        <Link to="./profile" className="btn profile-menu-btn">Profile</Link>
                                     </div>
                                 </li>
                                 <li>

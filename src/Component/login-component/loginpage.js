@@ -46,7 +46,8 @@ class LoginPage extends Component {
       for (var key in users) {
         if (users.hasOwnProperty(key)) {
           let user = users[key];
-          if (user.userid === this.state.userName && user.password === this.state.password) {
+          if (user.userId === this.state.userName && user.password === this.state.password) {
+            localStorage.setItem("userkey",key);
             localStorage.setItem("user", JSON.stringify(user));
             verified = true;
           }

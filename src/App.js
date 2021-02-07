@@ -19,6 +19,8 @@ import SignUp from './Component/login-component/signup';
 import SignUpSuccess from './Component/login-component/signupsuccess';
 import Orders from './Component/orders/orders';
 import './Component/orders/orders.css'
+import Profile from './Component/profile-component/profile';
+import './Component/profile-component/profile.css'
 
 class App extends Component{
 
@@ -36,6 +38,7 @@ class App extends Component{
         <Route path = "/signup" component = {SignUp}></Route>
         <Route path = "/signupsuccess" component = {SignUpSuccess}></Route>
         <Route path = "/myorders" component = {Orders}></Route>
+        <Route path = "/profile" component = {Profile}></Route>
       </BrowserRouter>
     )
   }

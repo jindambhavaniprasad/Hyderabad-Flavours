@@ -18,6 +18,9 @@
     height:40px;
     margin-top:8px
 }
+.headername a{
+    text-decoration: none !important;
+}
 .headername p{
     font-size: 27px;
     margin-left: 30px;

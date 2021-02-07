@@ -1,0 +1,24 @@
+.profile-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top:80px;
+}
+.profile-form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #979797;
+    padding: 20px 40px;
+    border-radius: 20px;
+}
+.profile-text-field{
+    margin:10px 0 !important;
+}
+.profile-submit-btn{
+    background-color: rgb(10, 10, 31) !important;
+    color:white !important
+}
+.profile-section .animation{
+    position: absolute
+}
